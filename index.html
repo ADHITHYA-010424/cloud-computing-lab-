@@ -1,0 +1,148 @@
+```html id="r9m2vk"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interesting Facts Hub</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:linear-gradient(to right,#1e3c72,#2a5298);
+color:white;
+text-align:center;
+}
+
+header{
+padding:25px;
+background:rgba(0,0,0,0.3);
+}
+
+header h1{
+font-size:40px;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:10px;
+font-size:18px;
+}
+
+section{
+padding:40px;
+}
+
+.card{
+background:white;
+color:black;
+margin:20px auto;
+padding:20px;
+width:80%;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+button{
+padding:12px 25px;
+font-size:16px;
+border:none;
+border-radius:8px;
+background:#ff9800;
+color:white;
+cursor:pointer;
+margin-top:20px;
+}
+
+button:hover{
+background:#e68900;
+}
+
+footer{
+padding:20px;
+background:rgba(0,0,0,0.4);
+margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌍 Interesting Facts Hub</h1>
+<nav>
+<a href="#facts">Facts</a>
+<a href="#quiz">Quiz</a>
+<a href="#about">About</a>
+</nav>
+</header>
+
+<section id="facts">
+<h2>🔥 Amazing Facts</h2>
+
+<div class="card">
+<p>🐙 Octopuses have three hearts.</p>
+</div>
+
+<div class="card">
+<p>🍯 Honey never spoils.</p>
+</div>
+
+<div class="card">
+<p>🦒 Giraffes sleep only 30 minutes a day.</p>
+</div>
+
+<div class="card">
+<p>🌌 There are more stars in the universe than grains of sand on Earth.</p>
+</div>
+</section>
+
+<section id="quiz">
+<h2>🎯 Fun Quiz</h2>
+<p>Click the button to get a random fact!</p>
+<button onclick="showFact()">Show Random Fact</button>
+<h3 id="output" style="margin-top:20px;"></h3>
+</section>
+
+<section id="about">
+<h2>📘 About</h2>
+<div class="card">
+<p>This website is created using HTML, CSS, and JavaScript for Cloud Computing Lab Exercise.</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Interesting Facts Website</p>
+</footer>
+
+<script>
+function showFact(){
+
+let facts = [
+"Bananas are berries, but strawberries are not.",
+"The Eiffel Tower grows taller in summer.",
+"A day on Venus is longer than a year on Venus.",
+"Sharks existed before trees.",
+"Your nose can remember 50,000 different smells."
+];
+
+let random = Math.floor(Math.random() * facts.length);
+
+document.getElementById("output").innerHTML = facts[random];
+}
+</script>
+
+</body>
+</html>
+```
